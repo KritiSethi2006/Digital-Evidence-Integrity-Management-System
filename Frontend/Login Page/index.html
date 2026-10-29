@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+
+<head>
+  <base href="/Login%20Page/">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ForensiChain digital evidence integrity and chain of custody management portal.">
+  <title>ForensiChain Digital Evidence Portal | Login Page</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=IBM+Plex+Serif:wght@400;600;700&family=Poiret+One&family=Poppins&display=swap');
+  </style>
+</head>
+
+<body id="background">
+  <!-- Header Section -->
+  <header>
+    <div class="strip" id="header">
+
+      <!-- Brand -->
+      <div class="header-brand">
+        <svg class="logo brand-shield" viewBox="0 0 64 76">
+          <path d="M32 3 59 13v20c0 18-11 31-27 40C16 64 5 51 5 33V13L32 3Z" />
+          <path class="shield-inner" d="M32 9 53 17v16c0 15-8 25-21 33C19 58 11 48 11 33V17L32 9Z" />
+        </svg>
+        <h1 class="crimson-text-semibold" id="header-component-1">ForensiChain</h1>
+      </div>
+
+      <!-- Extra Info -->
+      <h3 class="crimson-text-semibold" id="header-component-2">Authorized Personnel</h3>
+    </div>
+  </header>
+
+  <!-- Main Section -->
+  <main>
+    <!-- Credentials Form -->
+    <section id="box">
+      <div>
+        <h1 class="login-title crimson-text-bold">LOGIN</h1>
+      </div>
+
+      <!-- Login Fields -->
+      <form class="login-form">
+        <label class="login-credentials-1">
+          <i class="fa-regular fa-user"></i>
+          <input id="employee-id" type="text" placeholder="EMPLOYEE ID" autocomplete="username" required>
+        </label>
+
+        <label class="login-credentials-2">
+          <i class="fa-solid fa-lock"></i>
+          <input id="password" type="password" placeholder="PASSWORD" autocomplete="current-password" required>
+        </label>
+
+        <!-- Login Button -->
+        <button class="login-btn poiret-one-regular" type="submit">Login</button>
+        <p id="login-message" role="status"></p>
+      </form>
+
+      <!-- Demo Account Field -->
+      <section id="demo-account-container">
+        <div id="demo-account">
+          <!-- Title -->
+          <h3 id="demo-title" class="crimson-text-semibold">DEMO ACCOUNTS</h3>
+
+          <div class="demo-account-list">
+            <button class="crimson-text-semibold" data-account="POL-1042">Police-1042</button>
+            <button class="crimson-text-semibold" type="button" data-account="FSL-2076">Forensic-Sci-Lab-2076</button>
+            <button class="crimson-text-semibold" type="button" data-account="COURT-0312">Court-0312</button>
+            <button class="crimson-text-semibold" type="button" data-account="ADM-0001">Admin-0001</button>
+          </div>
+
+          <span class="demo-password crimson-text-regular">PASSWORD : HELLO WORLD</span>
+        </div>
+      </section>
+
+      <!-- Extra Info -->
+      <div class="extra-line" aria-hidden="true"></div>
+      <span class="extra crimson-text-regular">Need access? Contact your unit administrator</span>
+    </section>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="strip" id="footer">
+      <span class="crimson-text-regular">ForensiChain | Digital Evidence Integrity and Chain of Custody Management
+        System</span>
+      <span class="crimson-text-regular">Prototype</span>
+    </div>
+  </footer>
+
+  <script src="../icons.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

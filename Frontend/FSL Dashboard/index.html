@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Forensic Science Laboratory workspace for digital evidence intake, examination and integrity verification.">
+  <meta name="robots" content="noindex, nofollow">
+  <title>ForensiChain | FSL Workspace</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="stylesheet" href="styles.css?v=20261028-fsl-flow-4">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Poiret+One&family=Poppins&display=swap');
+  </style>
+</head>
+
+<body id="background" class="poppins-regular">
+  <header>
+    <div class="strip" id="header">
+      <a class="header-brand" href="../Login Page/index.html" aria-label="ForensiChain home"><svg
+          class="logo brand-shield" viewBox="0 0 64 76" aria-hidden="true">
+          <path d="M32 3 59 13v20c0 18-11 31-27 40C16 64 5 51 5 33V13L32 3Z" />
+          <path class="shield-inner" d="M32 9 53 17v16c0 15-8 25-21 33C19 58 11 48 11 33V17L32 9Z" />
+        </svg>
+        <h1 class="crimson-text-semibold" id="header-component-1">ForensiChain</h1>
+      </a>
+      <section class="header-right">
+        <div><span class="online-dot"></span><span id="header-component-2">FSL DASHBOARD</span></div><button
+          id="sign-out" type="button">Sign out</button>
+      </section>
+    </div>
+  </header>
+  <div class="dashboard-layout">
+    <aside class="sidebar">
+      <section class="officer-card"><span class="card-kicker">SIGNED IN AS</span>
+        <div class="officer-avatar">MN</div><b>Dr. Meera Nair</b><small>FSL-2076 · Digital Forensics
+          Division</small><span class="role-chip">FORENSIC EXAMINER</span>
+      </section>
+      <p class="nav-heading">LABORATORY WORKSPACE</p>
+      <nav class="side-nav" aria-label="FSL dashboard sections">
+        <button class="nav-link active" data-view="overview" type="button"><span class="nav-icon"><i
+              class="fa-solid fa-inbox"></i></span>Overview</button>
+        <button class="nav-link" data-view="intake" type="button"><span class="nav-icon"><i
+              class="fa-solid fa-box-open"></i></span>Intake queue</button>
+        <button class="nav-link" data-view="examination" type="button"><span class="nav-icon"><i
+              class="fa-solid fa-microscope"></i></span>Examination</button>
+        <button class="nav-link" data-view="custody" type="button"><span class="nav-icon"><i
+              class="fa-solid fa-calendar-days"></i></span>Custody logs</button>
+        <button class="nav-link" data-view="reports" type="button"><span class="nav-icon"><i
+              class="fa-solid fa-file-lines"></i></span>Reports</button>
+      </nav>
+    </aside>
+    <main class="main-content">
+      <div class="page-topline">
+        <div class="dashboard">Workspace <span>/</span> <b id="dashboard-current">Overview</b></div>
+      </div>
+      <div class="view-container" id="view-container"></div>
+    </main>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <div id="modal-root"></div>
+  <footer>
+    <div class="strip" id="footer"><span class="crimson-text-regular">ForensiChain | Digital Evidence Integrity and
+        Chain of Custody Management System</span><span class="crimson-text-regular">Prototype</span></div>
+  </footer>
+  <script src="../icons.js"></script>
+  <script src="script.js?v=20261028-fsl-flow-5"></script>
+</body>
+
+</html>

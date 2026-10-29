@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Police workspace for managing digital evidence, cases and chain of custody records.">
+  <title>ForensiChain | Police Workspace</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Poiret+One&family=Poppins&display=swap');
+  </style>
+</head>
+
+<body id="background" class="poppins-regular">
+  <!-- Header Section -->
+  <header>
+    <div class="strip" id="header">
+
+      <!-- Brand -->
+      <div class="header-brand">
+        <svg class="logo brand-shield" viewBox="0 0 64 76">
+          <path d="M32 3 59 13v20c0 18-11 31-27 40C16 64 5 51 5 33V13L32 3Z" />
+          <path class="shield-inner" d="M32 9 53 17v16c0 15-8 25-21 33C19 58 11 48 11 33V17L32 9Z" />
+        </svg>
+        <h1 class="crimson-text-semibold" id="header-component-1">ForensiChain</h1>
+      </div>
+
+      <!-- Extra Info -->
+      <section class="header-right">
+        <div>
+          <span class="online-dot"></span>
+          <span id="header-component-2">POLICE DASHBOARD</span>
+        </div>
+        <button id="sign-out">Sign out</button>
+      </section>
+    </div>
+  </header>
+
+  <div class="dashboard-layout">
+    <aside class="sidebar">
+      <section class="officer-card">
+        <span class="card-kicker">SIGNED IN AS</span>
+        <div class="officer-avatar">RS</div>
+        <b>Raman Sharma</b>
+        <small>POL-1042 · Central Police Station</small>
+        <span class="role-chip">POLICE OFFICER</span>
+      </section>
+      <p class="nav-heading">CASE MANAGEMENT</p>
+      <nav class="side-nav" aria-label="Police dashboard sections">
+        <button class="nav-link active" data-view="overview">
+          <span class="nav-icon">
+            <i class="fa-solid fa-inbox"></i>
+          </span>
+          Overview
+        </button>
+        <button class="nav-link" data-view="evidence">
+          <span class="nav-icon">
+            <i class="fa-regular fa-folder-open"></i>
+          </span>Evidence</button>
+        <button class="nav-link" data-view="cases">
+          <span class="nav-icon">
+            <i class="fa-solid fa-book-bookmark"></i>
+          </span>
+          Cases
+        </button>
+        <button class="nav-link" data-view="custody">
+          <span class="nav-icon">
+            <i class="fa-solid fa-calendar-days"></i>
+          </span>
+          Custody log
+        </button>
+        <button class="nav-link" data-view="reports">
+          <span class="nav-icon">
+            <i class="fa-solid fa-file-lines"></i>
+          </span>
+          Reports
+        </button>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <div class="page-topline">
+        <div class="dashboard">Workspace <span>/</span> <b id="dashboard-current">Overview</b></div>
+      </div>
+      <div class="view-container" id="view-container"></div>
+    </main>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <div id="modal-root"></div>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="strip" id="footer">
+      <span class="crimson-text-regular">ForensiChain | Digital Evidence Integrity and Chain of Custody Management
+        System</span>
+      <span class="crimson-text-regular">Prototype</span>
+    </div>
+  </footer>
+  <script src="../icons.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
